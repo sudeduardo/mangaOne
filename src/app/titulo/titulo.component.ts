@@ -31,7 +31,7 @@ export class TituloComponent implements OnInit {
           })
         });
       } else {
-        this.firestore.collection('mangas', ref => ref.where('slug', "==", params.slug)).snapshotChanges().subscribe(mangas => {
+        this.firestore.collection('mangas', ref => ref.where('slug', "==", params.path)).snapshotChanges().subscribe(mangas => {
           this.manga = mangas[0].payload.doc.data()
           const breadcrumb = {manga_name: this.manga.name};
           this.ng7DynamicBreadcrumbService.updateBreadcrumbLabels(breadcrumb);

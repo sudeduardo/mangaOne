@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mangaone-f1cee": {
+      "hosting": {
+        "mangaOne": [
+          "mangaone-f1cee"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mangaone-f1cee"
+  }
+}
